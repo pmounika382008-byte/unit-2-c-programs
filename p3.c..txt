@@ -1,0 +1,19 @@
+//  C programm to insert an element into an sorted array in order
+#include <stdio.h>
+int main() {
+    int a[5]={10,20,30,40,50};
+    int n=5,i, element;
+    printf("enter an element to insert");
+    scanf("%d",&element);
+    for(i=n-1;i>=0&& a[i]>element;i--);
+    {
+        a[i+1]=a[i];
+    }
+    a[i+1]=element;
+    n=n+1;
+    printf("after insertion");
+    for(i=0;i<n;i++)
+    printf("%d\t",a[i]);
+    return 0;
+}
+   

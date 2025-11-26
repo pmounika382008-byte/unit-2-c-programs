@@ -1,0 +1,27 @@
+// c program to sort an array using insertion sort
+#include <stdio.h>
+int main() {
+    int a [6]={85,12,59,45,71,51};
+    int i,j,temp,n=6;
+    printf("before sorting/n");
+    for (i=0;i<n;i++)
+    printf("%d\t",a[i]);
+    for(i=0;i<n-1;i++)
+    {if(a[i]>a[i+1])
+
+        for(j=i;j>=0;j--)
+        {
+            if (a[j]>a[j+1])
+            {
+            temp=a[j];
+            a[j]=a[j+1];
+            a[j+1]=temp;
+            }
+        }
+    }
+
+    printf("after sorting");
+    for (i=0;i<n;i++)
+    printf("%d\t",a[i]);
+    return 0;
+    }

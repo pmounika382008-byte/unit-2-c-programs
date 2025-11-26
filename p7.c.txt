@@ -1,0 +1,33 @@
+//c program by using array of pointers to structures for book search
+#include<stdio.h>
+struct book {
+    int Id;
+    char title[20];
+    char author[20];
+};
+int main() {
+    struct book b1 = {101, "c-intro", "ritchie,D"};
+    struct book b2 = {102, "story", "AAA"};
+    struct book b3 = {103, "fab", "XXX"};
+
+    // array of pointers to structures
+    struct book *books[3] = { &b1, &b2, &b3 };
+    int searchId, i, found = 0;
+    printf("Enter book ID to search: ");
+    scanf("%d", &searchId);
+    for (i = 0; i < 3; i++) {
+        if (books[i]->Id == searchId) {
+            found = 1;
+            printf("\nBook Found!\n");
+            printf("ID     : %d\n", books[i]->Id);
+            printf("Title  : %s\n", books[i]->title);
+            printf("Author : %s\n", books[i]->author);
+            break;
+        }
+    }
+
+    if (!found)
+        printf("Book Not Found\n");
+
+    return 0;
+}

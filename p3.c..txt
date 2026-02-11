@@ -16,4 +16,8 @@ int main() {
     printf("%d\t",a[i]);
     return 0;
 }
+output:
+enter an element to insert: 25
+after insertion
+10	20	25	30	40	50
    

@@ -9,3 +9,5 @@ int main() {
 
     return 0;
 }
+output:The array contains 6 elements: {10, 20, 30, 40, 50, 60}
+

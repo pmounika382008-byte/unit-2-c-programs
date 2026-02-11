@@ -1,4 +1,4 @@
-// c progran for function returning pointer to array element
+// c program for function returning pointer to array element
 #include <stdio.h>
 int* display(int a[],int index)
 {
@@ -11,4 +11,5 @@ int main() {
     printf("%d", *p);
 
     return 0;
+
 }

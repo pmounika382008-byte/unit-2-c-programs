@@ -21,4 +21,8 @@ low = mid + 1; }
 printf("%d  found at %d",key,mid+1);
 return 0; 
     
+
 }
+output:
+enter an element to search: 40
+40 found at 4

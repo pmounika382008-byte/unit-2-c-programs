@@ -14,4 +14,6 @@ if(found)
 printf("Element found at index %d", i);
 else
 printf("Element not found"); 
+
 return 0; }
+output:Element found at index 2

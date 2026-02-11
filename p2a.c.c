@@ -29,4 +29,9 @@ int main() {
     printf("\n");
 
     return 0;
+
 }
+output:Array before sorting:
+50	11	10	9	45	
+Array after sorting (Bubble Sort):
+9	10	11	45	50

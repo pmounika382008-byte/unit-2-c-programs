@@ -14,4 +14,10 @@ int main() {
     ptr++;
     printf("%d\n",*ptr);
     return 0;
+
 }
+output:  1
+         2
+         3
+         4
+         5

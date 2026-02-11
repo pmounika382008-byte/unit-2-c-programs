@@ -30,4 +30,12 @@ int main() {
         printf("Book Not Found\n");
 
     return 0;
+
 }
+
+
+output:Enter book ID to search: 103
+Book Found!
+ID     : 103
+Title  : fab
+Author : XXX
